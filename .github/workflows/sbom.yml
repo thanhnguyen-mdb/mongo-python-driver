@@ -1,0 +1,93 @@
+name: Generate SBOM
+
+# This workflow uses cdxgen and publishes
+# an sbom.json artifact enriched with supplier information.
+# It is configured to run on demand and on pushes to any branch
+# (including non-default branches) so you can see results while
+# iterating in feature branches.
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: ['**']
+    paths:
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - 'requirements.txt'
+      - 'generate_sbom.sh'
+      - '.github/workflows/sbom.yml'
+      - 'tools/enrich_suppliers.py'
+
+permissions:
+  contents: read
+  actions: read
+  id-token: write
+
+jobs:
+  sbom:
+    name: Build SBOM
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10.12'
+
+      - name: Set up Node.js (for cdxgen)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "UV_ROOT=$HOME/.local/bin" >> $GITHUB_ENV
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+        env:
+          # Avoid interactive prompts
+          UV_INSTALL_SKIP_PATH_CHECK: '1'
+
+      - name: Sync dependencies (all groups, active)
+        run: |
+          uv venv sbom-venv
+          source sbom-venv/bin/activate
+          uv sync --all-groups --active
+        shell: bash
+
+      - name: Install cdxgen
+        run: npm install -g @cyclonedx/cdxgen
+
+      - name: Generate SBOM
+        run: |
+          source sbom-venv/bin/activate
+          cdxgen -t python --python-path sbom-venv/bin/python -o sbom.json --json-pretty
+        shell: bash
+
+      - name: Enrich SBOM with supplier info
+        run: |
+            source sbom-venv/bin/activate
+            python tools/enrich_suppliers.py --input sbom.json
+        shell: bash
+
+      - name: Upload SBOM artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.json
+          if-no-files-found: error
+
+      - name: Display SBOM summary line
+        run: |
+          echo "SBOM size (bytes): $(wc -c < sbom.json)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Cleanup
+        if: always()
+        run: rm -rf sbom-venv
+
+    # Allow manual re-runs without code changes
+    concurrency:
+      group: sbom-${{ github.ref }}
+      cancel-in-progress: false
