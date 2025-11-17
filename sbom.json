@@ -1,11 +1,4610 @@
 {
-    "metadata": {
-      "timestamp": "2024-05-02T17:36:12.698229+00:00"
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:e91282cb-aa32-4c32-9c43-43a9068c5ea6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-11-17T19:09:49Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "11.11.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@11.11.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.11.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
     },
-    "components": [],
-    "serialNumber": "urn:uuid:9876a8a6-060e-486f-b128-910aecf0fe7b",
-    "version": 1,
-    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
-    "bomFormat": "CycloneDX",
-    "specVersion": "1.5"
-  }
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "pymongo",
+      "description": "PyMongo - the Official MongoDB Python driver",
+      "authors": [
+        {
+          "name": "The MongoDB Python Team"
+        }
+      ],
+      "tags": [
+        "bson",
+        "gridfs",
+        "mongo",
+        "mongodb",
+        "pymongo"
+      ],
+      "properties": [
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        },
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-python-driver/mongo-python-driver/pyproject.toml"
+        }
+      ],
+      "type": "application",
+      "bom-ref": "pkg:pypi/pymongo@latest",
+      "purl": "pkg:pypi/pymongo@latest",
+      "version": "latest",
+      "supplier": {
+        "name": "The MongoDB Python Team",
+        "url": [
+          "https://www.mongodb.org",
+          "https://github.com/mongodb/mongo-python-driver"
+        ]
+      }
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "pypi"
+      },
+      {
+        "name": "cdx:bom:componentSrcFiles",
+        "value": "pyproject.toml\\nsbom-venv\\nsetup.py\\nuv.lock"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "accessible-pygments",
+      "version": "0.0.5",
+      "purl": "pkg:pypi/accessible-pygments@0.0.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/accessible-pygments@0.0.5",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/Quansight-Labs/accessible-pygments"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "alabaster",
+      "version": "0.7.16",
+      "purl": "pkg:pypi/alabaster@0.7.16",
+      "type": "library",
+      "bom-ref": "pkg:pypi/alabaster@0.7.16",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Adam Turner",
+        "contact": [
+          {
+            "name": "Adam Turner",
+            "email": "Jeff Forcier <jeff@bitprophet.org>"
+          }
+        ],
+        "url": [
+          "https://alabaster.readthedocs.io/",
+          "https://github.com/sphinx-doc/alabaster"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "alabaster",
+      "version": "1.0.0",
+      "purl": "pkg:pypi/alabaster@1.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/alabaster@1.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Adam Turner",
+        "contact": [
+          {
+            "name": "Adam Turner",
+            "email": "Jeff Forcier <jeff@bitprophet.org>"
+          }
+        ],
+        "url": [
+          "https://alabaster.readthedocs.io/",
+          "https://github.com/sphinx-doc/alabaster"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "anyio",
+      "version": "4.9.0",
+      "purl": "pkg:pypi/anyio@4.9.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/anyio@4.9.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "attrs",
+      "version": "25.3.0",
+      "purl": "pkg:pypi/attrs@25.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/attrs@25.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "babel",
+      "version": "2.17.0",
+      "purl": "pkg:pypi/babel@2.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/babel@2.17.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Aarni Koskela",
+        "contact": [
+          {
+            "name": "Aarni Koskela",
+            "email": "akx@iki.fi"
+          }
+        ],
+        "url": [
+          "https://babel.pocoo.org/",
+          "https://github.com/python-babel/babel"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "backports-asyncio-runner",
+      "version": "1.2.0",
+      "purl": "pkg:pypi/backports-asyncio-runner@1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/backports-asyncio-runner@1.2.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/samypr100/backports.asyncio.runner"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "beautifulsoup4",
+      "version": "4.13.4",
+      "purl": "pkg:pypi/beautifulsoup4@4.13.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/beautifulsoup4@4.13.4",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.crummy.com/software/BeautifulSoup/bs4/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "boto3",
+      "version": "1.40.0",
+      "purl": "pkg:pypi/boto3@1.40.0",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/boto3@1.40.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ],
+      "supplier": {
+        "name": "Amazon Web Services",
+        "url": [
+          "https://github.com/boto/boto3"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "botocore",
+      "version": "1.40.0",
+      "purl": "pkg:pypi/botocore@1.40.0",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/botocore@1.40.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ],
+      "supplier": {
+        "name": "Amazon Web Services",
+        "url": [
+          "https://github.com/boto/botocore"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "certifi",
+      "version": "2025.7.14",
+      "purl": "pkg:pypi/certifi@2025.7.14",
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2025.7.14",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Kenneth Reitz",
+        "contact": [
+          {
+            "name": "Kenneth Reitz",
+            "email": "me@kennethreitz.com"
+          }
+        ],
+        "url": [
+          "https://github.com/certifi/python-certifi"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "cffi",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/cffi@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cffi@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "tags": [
+        "native"
+      ],
+      "supplier": {
+        "name": "Matt Davis, Matt Clay, Matti Picus"
+      }
+    },
+    {
+      "group": "",
+      "name": "charset-normalizer",
+      "version": "3.4.2",
+      "purl": "pkg:pypi/charset-normalizer@3.4.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/charset-normalizer@3.4.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "click",
+      "version": "8.1.8",
+      "purl": "pkg:pypi/click@8.1.8",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.1.8",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pallets/click/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "click",
+      "version": "8.2.1",
+      "purl": "pkg:pypi/click@8.2.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.2.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pallets/click/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/tartley/colorama"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "coverage",
+      "version": "7.5.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/coverage@7.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/coverage@7.5.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "coverage"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Ned Batchelder and 244 others",
+        "contact": [
+          {
+            "name": "Ned Batchelder and 244 others",
+            "email": "ned@nedbatchelder.com"
+          }
+        ],
+        "url": [
+          "https://github.com/coveragepy/coveragepy"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "cramjam",
+      "version": "2.11.0",
+      "purl": "pkg:pypi/cramjam@2.11.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cramjam@2.11.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Miles Granger <miles59923@gmail.com>",
+        "contact": [
+          {
+            "name": "Miles Granger <miles59923@gmail.com>",
+            "email": "Miles Granger <miles59923@gmail.com>"
+          }
+        ],
+        "url": [
+          "https://github.com/milesgranger/pyrus-cramjam"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "cryptography",
+      "version": "46.0.1",
+      "purl": "pkg:pypi/cryptography@46.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cryptography@46.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pyca/cryptography",
+          "https://github.com/pyca/cryptography/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "decorator",
+      "version": "5.2.1",
+      "purl": "pkg:pypi/decorator@5.2.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/decorator@5.2.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "dnspython",
+      "version": "2.7.0",
+      "purl": "pkg:pypi/dnspython@2.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/dnspython@2.7.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.dnspython.org",
+          "https://github.com/rthalley/dnspython.git"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "docutils",
+      "version": "0.21.2",
+      "purl": "pkg:pypi/docutils@0.21.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/docutils@0.21.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://docutils.sourceforge.io"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "exceptiongroup",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/exceptiongroup@1.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/exceptiongroup@1.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "furo",
+      "version": "2025.9.25",
+      "purl": "pkg:pypi/furo@2025.9.25",
+      "type": "library",
+      "bom-ref": "pkg:pypi/furo@2025.9.25",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "gevent",
+      "version": "25.5.1",
+      "scope": "optional",
+      "purl": "pkg:pypi/gevent@25.5.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/gevent@25.5.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "gevent"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Jason Madden",
+        "contact": [
+          {
+            "name": "Jason Madden",
+            "email": "jason@seecoresoftware.com"
+          }
+        ],
+        "url": [
+          "http://www.gevent.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "greenlet",
+      "version": "3.2.3",
+      "purl": "pkg:pypi/greenlet@3.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/greenlet@3.2.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Jason Madden",
+        "contact": [
+          {
+            "name": "Jason Madden",
+            "email": "jason@seecoresoftware.com"
+          }
+        ],
+        "url": [
+          "https://greenlet.readthedocs.io/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "h11",
+      "version": "0.16.0",
+      "purl": "pkg:pypi/h11@0.16.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/h11@0.16.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Nathaniel J. Smith",
+        "contact": [
+          {
+            "name": "Nathaniel J. Smith",
+            "email": "njs@pobox.com"
+          }
+        ],
+        "url": [
+          "https://github.com/python-hyper/h11"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "type": "library",
+      "bom-ref": "pkg:pypi/httpcore@1.0.9",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.encode.io/httpcore/",
+          "https://github.com/encode/httpcore"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "httpx",
+      "version": "0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/httpx@0.28.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/encode/httpx"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "idna",
+      "version": "3.10",
+      "purl": "pkg:pypi/idna@3.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@3.10",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/kjd/idna"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "imagesize",
+      "version": "1.4.1",
+      "purl": "pkg:pypi/imagesize@1.4.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/imagesize@1.4.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Yoshiki Shibukawa",
+        "contact": [
+          {
+            "name": "Yoshiki Shibukawa",
+            "email": "yoshiki@shibu.jp"
+          }
+        ],
+        "url": [
+          "https://github.com/shibukawa/imagesize_py"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "importlib-metadata",
+      "version": "8.7.0",
+      "purl": "pkg:pypi/importlib-metadata@8.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/importlib-metadata@8.7.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/python/importlib_metadata"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "iniconfig",
+      "version": "2.1.0",
+      "purl": "pkg:pypi/iniconfig@2.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/iniconfig@2.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pytest-dev/iniconfig"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "jinja2",
+      "version": "3.1.6",
+      "purl": "pkg:pypi/jinja2@3.1.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/jinja2@3.1.6",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pallets/jinja/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "jmespath",
+      "version": "1.0.1",
+      "purl": "pkg:pypi/jmespath@1.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/jmespath@1.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "James Saryerwinnie",
+        "contact": [
+          {
+            "name": "James Saryerwinnie",
+            "email": "js@jamesls.com"
+          }
+        ],
+        "url": [
+          "https://github.com/jmespath/jmespath.py"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "markupsafe",
+      "version": "3.0.2",
+      "purl": "pkg:pypi/markupsafe@3.0.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/markupsafe@3.0.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pallets/markupsafe/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "mockupdb",
+      "version": "1.9.0.dev1",
+      "purl": "pkg:pypi/mockupdb@1.9.0.dev1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mockupdb@1.9.0.dev1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "A. Jesse Jiryu Davis",
+        "contact": [
+          {
+            "name": "A. Jesse Jiryu Davis",
+            "email": "jesse@mongodb.com"
+          }
+        ],
+        "url": [
+          "https://github.com/ajdavis/mongo-mockup-db"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "mypy",
+      "version": "1.18.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/mypy@1.18.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy@1.18.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "typing"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.mypy-lang.org/",
+          "https://github.com/python/mypy"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "mypy-extensions",
+      "version": "1.1.0",
+      "purl": "pkg:pypi/mypy-extensions@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy-extensions@1.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/python/mypy_extensions"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "nodeenv",
+      "version": "1.9.1",
+      "purl": "pkg:pypi/nodeenv@1.9.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/nodeenv@1.9.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Eugene Kalinin",
+        "contact": [
+          {
+            "name": "Eugene Kalinin",
+            "email": "e.v.kalinin@gmail.com"
+          }
+        ],
+        "url": [
+          "https://github.com/ekalinin/nodeenv"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "packaging",
+      "version": "25.0",
+      "purl": "pkg:pypi/packaging@25.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@25.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pypa/packaging"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pathspec",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/pathspec@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pathspec@0.12.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pip",
+      "version": "25.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/pip@25.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pip@25.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "pip"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "typing"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://pip.pypa.io/",
+          "https://github.com/pypa/pip"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pluggy",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/pluggy@1.6.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pluggy@1.6.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pyasn1",
+      "version": "0.6.1",
+      "purl": "pkg:pypi/pyasn1@0.6.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyasn1@0.6.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "pyasn1 maintenance organization",
+        "contact": [
+          {
+            "name": "pyasn1 maintenance organization",
+            "email": "Christian Heimes <christian@python.org>"
+          }
+        ],
+        "url": [
+          "https://github.com/pyasn1/pyasn1"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pyasn1-modules",
+      "version": "0.4.2",
+      "purl": "pkg:pypi/pyasn1-modules@0.4.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyasn1-modules@0.4.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "pyasn1 maintenance organization",
+        "contact": [
+          {
+            "name": "pyasn1 maintenance organization",
+            "email": "Christian Heimes <christian@python.org>"
+          }
+        ],
+        "url": [
+          "https://github.com/pyasn1/pyasn1-modules"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pycparser",
+      "version": "2.22",
+      "purl": "pkg:pypi/pycparser@2.22",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pycparser@2.22",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "tags": [
+        "parse"
+      ],
+      "supplier": {
+        "name": "Eli Bendersky",
+        "contact": [
+          {
+            "name": "Eli Bendersky",
+            "email": "eliben@gmail.com"
+          }
+        ],
+        "url": [
+          "https://github.com/eliben/pycparser"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pygments",
+      "version": "2.19.2",
+      "purl": "pkg:pypi/pygments@2.19.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pygments@2.19.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Matthäus G. Chajdas",
+        "contact": [
+          {
+            "name": "Matthäus G. Chajdas",
+            "email": "Georg Brandl <georg@python.org>, Jean Abou Samra <jean@abou-samra.fr>"
+          }
+        ],
+        "url": [
+          "https://pygments.org",
+          "https://github.com/pygments/pygments"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pykerberos",
+      "version": "1.2.4",
+      "purl": "pkg:pypi/pykerberos@1.2.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pykerberos@1.2.4",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/02strich/pykerberos"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pymongo-auth-aws",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/pymongo-auth-aws@1.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pymongo-auth-aws@1.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/mongodb/pymongo-auth-aws"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pymongocrypt",
+      "version": "1.16.0",
+      "purl": "pkg:pypi/pymongocrypt@1.16.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pymongocrypt@1.16.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/mongodb/libmongocrypt/tree/master/bindings/python"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pyopenssl",
+      "version": "25.3.0",
+      "purl": "pkg:pypi/pyopenssl@25.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyopenssl@25.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "tags": [
+        "security"
+      ],
+      "supplier": {
+        "name": "The pyOpenSSL developers",
+        "contact": [
+          {
+            "name": "The pyOpenSSL developers",
+            "email": "cryptography-dev@python.org"
+          }
+        ],
+        "url": [
+          "https://pyopenssl.org/",
+          "https://github.com/pyca/pyopenssl"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pyright",
+      "version": "1.1.406",
+      "scope": "optional",
+      "purl": "pkg:pypi/pyright@1.1.406",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyright@1.1.406",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "typing"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Robert Craigie",
+        "url": [
+          "https://github.com/RobertCraigie/pyright-python"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pytest",
+      "version": "8.4.1",
+      "purl": "pkg:pypi/pytest@8.4.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@8.4.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Holger Krekel, Bruno Oliveira, Ronny Pfannschmidt, Floris Bruynooghe, Brianna Laugher, Florian Bruhin, Others (See AUTHORS)",
+        "url": [
+          "https://docs.pytest.org/en/latest/",
+          "https://github.com/pytest-dev/pytest"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pytest-asyncio",
+      "version": "1.1.0",
+      "purl": "pkg:pypi/pytest-asyncio@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest-asyncio@1.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pytest-dev/pytest-asyncio"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pytest-cov",
+      "version": "6.2.1",
+      "scope": "optional",
+      "purl": "pkg:pypi/pytest-cov@6.2.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest-cov@6.2.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "coverage"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Paul Ganssle",
+        "contact": [
+          {
+            "name": "Paul Ganssle",
+            "email": "dateutil@python.org"
+          }
+        ],
+        "url": [
+          "https://github.com/dateutil/dateutil"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "python-snappy",
+      "version": "0.7.3",
+      "purl": "pkg:pypi/python-snappy@0.7.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-snappy@0.7.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Andres Moreira",
+        "contact": [
+          {
+            "name": "Andres Moreira",
+            "email": "andres@andresmoreira.com"
+          }
+        ],
+        "url": [
+          "http://github.com/intake/python-snappy"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "readthedocs-sphinx-search",
+      "version": "0.3.2",
+      "purl": "pkg:pypi/readthedocs-sphinx-search@0.3.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/readthedocs-sphinx-search@0.3.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Vaibhav Gupta",
+        "contact": [
+          {
+            "name": "Vaibhav Gupta",
+            "email": "vaibhgupt199@gmail.com"
+          }
+        ],
+        "url": [
+          "https://github.com/readthedocs/readthedocs-sphinx-search"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "requests",
+      "version": "2.32.4",
+      "purl": "pkg:pypi/requests@2.32.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.32.4",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Kenneth Reitz",
+        "contact": [
+          {
+            "name": "Kenneth Reitz",
+            "email": "me@kennethreitz.org"
+          }
+        ],
+        "url": [
+          "https://requests.readthedocs.io",
+          "https://github.com/psf/requests"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "roman-numerals-py",
+      "version": "3.1.0",
+      "purl": "pkg:pypi/roman-numerals-py@3.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/roman-numerals-py@3.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Adam Turner"
+      }
+    },
+    {
+      "group": "",
+      "name": "s3transfer",
+      "version": "0.13.1",
+      "purl": "pkg:pypi/s3transfer@0.13.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/s3transfer@0.13.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Amazon Web Services",
+        "contact": [
+          {
+            "name": "Amazon Web Services",
+            "email": "kyknapp1@gmail.com"
+          }
+        ],
+        "url": [
+          "https://github.com/boto/s3transfer"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "service-identity",
+      "version": "24.2.0",
+      "purl": "pkg:pypi/service-identity@24.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/service-identity@24.2.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "setuptools",
+      "version": "80.9.0",
+      "purl": "pkg:pypi/setuptools@80.9.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/setuptools@80.9.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/pypa/setuptools"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "simplejson",
+      "version": "3.20.1",
+      "scope": "optional",
+      "purl": "pkg:pypi/simplejson@3.20.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/simplejson@3.20.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "cdx:pyproject:group",
+          "value": "perf"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Bob Ippolito",
+        "contact": [
+          {
+            "name": "Bob Ippolito",
+            "email": "bob@redivi.com"
+          }
+        ],
+        "url": [
+          "https://github.com/simplejson/simplejson"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Benjamin Peterson",
+        "contact": [
+          {
+            "name": "Benjamin Peterson",
+            "email": "benjamin@python.org"
+          }
+        ],
+        "url": [
+          "https://github.com/benjaminp/six"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sniffio",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/sniffio@1.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sniffio@1.3.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "tags": [
+        "native"
+      ],
+      "supplier": {
+        "url": [
+          "https://github.com/python-trio/sniffio"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "snowballstemmer",
+      "version": "3.0.1",
+      "purl": "pkg:pypi/snowballstemmer@3.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/snowballstemmer@3.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Snowball Developers",
+        "contact": [
+          {
+            "name": "Snowball Developers",
+            "email": "snowball-discuss@lists.tartarus.org"
+          }
+        ],
+        "url": [
+          "https://github.com/snowballstem/snowball"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "soupsieve",
+      "version": "2.7",
+      "purl": "pkg:pypi/soupsieve@2.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/soupsieve@2.7",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/facelessuser/soupsieve"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinx",
+      "version": "7.4.7",
+      "purl": "pkg:pypi/sphinx@7.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinx@7.4.7",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinx",
+      "version": "8.1.3",
+      "purl": "pkg:pypi/sphinx@8.1.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinx@8.1.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinx",
+      "version": "8.2.3",
+      "purl": "pkg:pypi/sphinx@8.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinx@8.2.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinx-autobuild",
+      "version": "2024.10.3",
+      "purl": "pkg:pypi/sphinx-autobuild@2024.10.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinx-autobuild@2024.10.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Adam Turner",
+        "contact": [
+          {
+            "name": "Adam Turner",
+            "email": "Jonathan Stoppani <jonathan@stoppani.name>"
+          }
+        ],
+        "url": [
+          "https://github.com/sphinx-doc/sphinx-autobuild"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinx-basic-ng",
+      "version": "1.0.0b2",
+      "purl": "pkg:pypi/sphinx-basic-ng@1.0.0b2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinx-basic-ng@1.0.0b2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Pradyun Gedam",
+        "contact": [
+          {
+            "name": "Pradyun Gedam",
+            "email": "mail@pradyunsg.me"
+          }
+        ],
+        "url": [
+          "https://github.com/pradyunsg/sphinx-basic-ng"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinx-rtd-theme",
+      "version": "3.0.2",
+      "purl": "pkg:pypi/sphinx-rtd-theme@3.0.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinx-rtd-theme@3.0.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Dave Snider, Read the Docs, Inc. & contributors",
+        "contact": [
+          {
+            "name": "Dave Snider, Read the Docs, Inc. & contributors",
+            "email": "dev@readthedocs.org"
+          }
+        ],
+        "url": [
+          "https://github.com/readthedocs/sphinx_rtd_theme",
+          "https://sphinx-rtd-theme.readthedocs.io/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-applehelp",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-devhelp",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-htmlhelp",
+      "version": "2.1.0",
+      "purl": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-jquery",
+      "version": "4.1",
+      "purl": "pkg:pypi/sphinxcontrib-jquery@4.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-jquery@4.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Adam Turner",
+        "url": [
+          "https://github.com/sphinx-contrib/jquery/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-jsmath",
+      "version": "1.0.1",
+      "purl": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Georg Brandl",
+        "contact": [
+          {
+            "name": "Georg Brandl",
+            "email": "georg@python.org"
+          }
+        ],
+        "url": [
+          "http://sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-qthelp",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-serializinghtml",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://www.sphinx-doc.org/"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sphinxcontrib-shellcheck",
+      "version": "1.1.2",
+      "purl": "pkg:pypi/sphinxcontrib-shellcheck@1.1.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sphinxcontrib-shellcheck@1.1.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Pablo Acosta-Serafini",
+        "contact": [
+          {
+            "name": "Pablo Acosta-Serafini",
+            "email": "pmasdev@gmail.com"
+          }
+        ],
+        "url": [
+          "https://github.com/pmacosta/sphinxcontrib-shellcheck"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "starlette",
+      "version": "0.47.2",
+      "purl": "pkg:pypi/starlette@0.47.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/starlette@0.47.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/Kludex/starlette"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "tomli",
+      "version": "2.2.1",
+      "purl": "pkg:pypi/tomli@2.2.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli@2.2.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/hukkin/tomli"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "typing-extensions",
+      "version": "4.14.1",
+      "purl": "pkg:pypi/typing-extensions@4.14.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.14.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        },
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "tags": [
+        "devel"
+      ],
+      "supplier": {
+        "url": [
+          "https://github.com/python/typing_extensions"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "1.26.20",
+      "purl": "pkg:pypi/urllib3@1.26.20",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@1.26.20",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "2.5.0",
+      "purl": "pkg:pypi/urllib3@2.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.5.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "uvicorn",
+      "version": "0.35.0",
+      "purl": "pkg:pypi/uvicorn@0.35.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/uvicorn@0.35.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://uvicorn.dev/",
+          "https://github.com/Kludex/uvicorn"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "watchfiles",
+      "version": "1.1.0",
+      "purl": "pkg:pypi/watchfiles@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/watchfiles@1.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/samuelcolvin/watchfiles"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "websockets",
+      "version": "15.0.1",
+      "purl": "pkg:pypi/websockets@15.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/websockets@15.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/python-websockets/websockets"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "winkerberos",
+      "version": "0.12.2",
+      "purl": "pkg:pypi/winkerberos@0.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/winkerberos@0.12.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/mongodb-labs/winkerberos"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zipp",
+      "version": "3.23.0",
+      "purl": "pkg:pypi/zipp@3.23.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zipp@3.23.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/jaraco/zipp"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zope-event",
+      "version": "5.1.1",
+      "purl": "pkg:pypi/zope-event@5.1.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zope-event@5.1.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Zope Foundation and Contributors",
+        "contact": [
+          {
+            "name": "Zope Foundation and Contributors",
+            "email": "zope-dev@zope.dev"
+          }
+        ],
+        "url": [
+          "https://github.com/zopefoundation/zope.event"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zope-interface",
+      "version": "7.2",
+      "purl": "pkg:pypi/zope-interface@7.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zope-interface@7.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Zope Foundation and Contributors",
+        "contact": [
+          {
+            "name": "Zope Foundation and Contributors",
+            "email": "zope-dev@zope.dev"
+          }
+        ],
+        "url": [
+          "https://github.com/zopefoundation/zope.interface"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zstandard",
+      "version": "0.23.0",
+      "purl": "pkg:pypi/zstandard@0.23.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zstandard@0.23.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "pyproject.toml"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "uv.lock"
+              }
+            ],
+            "concludedValue": "uv.lock"
+          }
+        ]
+      },
+      "supplier": {
+        "url": [
+          "https://github.com/indygreg/python-zstandard"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zope.interface",
+      "version": "7.2",
+      "purl": "pkg:pypi/zope.interface@7.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zope.interface@7.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Zope Foundation and Contributors",
+        "contact": [
+          {
+            "name": "Zope Foundation and Contributors",
+            "email": "zope-dev@zope.dev"
+          }
+        ],
+        "url": [
+          "https://github.com/zopefoundation/zope.interface"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "mockupdb",
+      "version": "latest",
+      "purl": "pkg:pypi/mockupdb@latest",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mockupdb@latest",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "A. Jesse Jiryu Davis",
+        "contact": [
+          {
+            "name": "A. Jesse Jiryu Davis",
+            "email": "jesse@mongodb.com"
+          }
+        ],
+        "url": [
+          "https://github.com/ajdavis/mongo-mockup-db"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pymongo",
+      "version": "4.16.0.dev0",
+      "purl": "pkg:pypi/pymongo@4.16.0.dev0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pymongo@4.16.0.dev0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.8,
+                "value": "setup.py"
+              }
+            ],
+            "concludedValue": "setup.py"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "The MongoDB Python Team",
+        "url": [
+          "https://www.mongodb.org",
+          "https://github.com/mongodb/mongo-python-driver"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pymongo",
+      "version": "latest",
+      "purl": "pkg:pypi/pymongo@latest",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pymongo@latest",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "The MongoDB Python Team",
+        "url": [
+          "https://www.mongodb.org",
+          "https://github.com/mongodb/mongo-python-driver"
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zope.event",
+      "version": "5.1.1",
+      "purl": "pkg:pypi/zope.event@5.1.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zope.event@5.1.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "setup.py"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "instrumentation",
+                "confidence": 1,
+                "value": "sbom-venv"
+              }
+            ],
+            "concludedValue": "sbom-venv"
+          }
+        ]
+      },
+      "supplier": {
+        "name": "Zope Foundation and Contributors",
+        "contact": [
+          {
+            "name": "Zope Foundation and Contributors",
+            "email": "zope-dev@zope.dev"
+          }
+        ],
+        "url": [
+          "https://github.com/zopefoundation/zope.event"
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/pymongo@latest",
+      "dependsOn": [
+        "pkg:pypi/dnspython@2.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/accessible-pygments@0.0.5",
+      "dependsOn": [
+        "pkg:pypi/pygments@2.19.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/alabaster@0.7.16",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/alabaster@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/anyio@4.9.0",
+      "dependsOn": [
+        "pkg:pypi/exceptiongroup@1.3.0",
+        "pkg:pypi/idna@3.10",
+        "pkg:pypi/sniffio@1.3.1",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/attrs@25.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/babel@2.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/backports-asyncio-runner@1.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/beautifulsoup4@4.13.4",
+      "dependsOn": [
+        "pkg:pypi/soupsieve@2.7",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/boto3@1.40.0",
+      "dependsOn": [
+        "pkg:pypi/botocore@1.40.0",
+        "pkg:pypi/jmespath@1.0.1",
+        "pkg:pypi/s3transfer@0.13.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/botocore@1.40.0",
+      "dependsOn": [
+        "pkg:pypi/jmespath@1.0.1",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/urllib3@2.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/certifi@2025.7.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cffi@2.0.0",
+      "dependsOn": [
+        "pkg:pypi/pycparser@2.22"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/charset-normalizer@3.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/click@8.1.8",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/click@8.2.1",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/colorama@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/coverage@7.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cramjam@2.11.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cryptography@46.0.1",
+      "dependsOn": [
+        "pkg:pypi/cffi@2.0.0",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/decorator@5.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/dnspython@2.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/docutils@0.21.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/exceptiongroup@1.3.0",
+      "dependsOn": [
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/furo@2025.9.25",
+      "dependsOn": [
+        "pkg:pypi/accessible-pygments@0.0.5",
+        "pkg:pypi/beautifulsoup4@4.13.4",
+        "pkg:pypi/pygments@2.19.2",
+        "pkg:pypi/sphinx-basic-ng@1.0.0b2",
+        "pkg:pypi/sphinx@8.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/gevent@25.5.1",
+      "dependsOn": [
+        "pkg:pypi/cffi@2.0.0",
+        "pkg:pypi/greenlet@3.2.3",
+        "pkg:pypi/zope-event@5.1.1",
+        "pkg:pypi/zope-interface@7.2",
+        "pkg:pypi/zope.interface@7.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/greenlet@3.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/h11@0.16.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/httpcore@1.0.9",
+      "dependsOn": [
+        "pkg:pypi/certifi@2025.7.14",
+        "pkg:pypi/h11@0.16.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/httpx@0.28.1",
+      "dependsOn": [
+        "pkg:pypi/anyio@4.9.0",
+        "pkg:pypi/certifi@2025.7.14",
+        "pkg:pypi/httpcore@1.0.9",
+        "pkg:pypi/idna@3.10"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/idna@3.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/imagesize@1.4.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/importlib-metadata@8.7.0",
+      "dependsOn": [
+        "pkg:pypi/zipp@3.23.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/iniconfig@2.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/jinja2@3.1.6",
+      "dependsOn": [
+        "pkg:pypi/markupsafe@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/jmespath@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/markupsafe@3.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/mockupdb@1.9.0.dev1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/mypy@1.18.2",
+      "dependsOn": [
+        "pkg:pypi/mypy-extensions@1.1.0",
+        "pkg:pypi/pathspec@0.12.1",
+        "pkg:pypi/tomli@2.2.1",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/mypy-extensions@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/nodeenv@1.9.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/packaging@25.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pathspec@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pip@25.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pluggy@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyasn1@0.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyasn1-modules@0.4.2",
+      "dependsOn": [
+        "pkg:pypi/pyasn1@0.6.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pycparser@2.22",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pygments@2.19.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pykerberos@1.2.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pymongo-auth-aws@1.3.0",
+      "dependsOn": [
+        "pkg:pypi/boto3@1.40.0",
+        "pkg:pypi/botocore@1.40.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pymongocrypt@1.16.0",
+      "dependsOn": [
+        "pkg:pypi/cffi@2.0.0",
+        "pkg:pypi/cryptography@46.0.1",
+        "pkg:pypi/httpx@0.28.1",
+        "pkg:pypi/packaging@25.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pyopenssl@25.3.0",
+      "dependsOn": [
+        "pkg:pypi/cryptography@46.0.1",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pyright@1.1.406",
+      "dependsOn": [
+        "pkg:pypi/nodeenv@1.9.1",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytest@8.4.1",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/exceptiongroup@1.3.0",
+        "pkg:pypi/iniconfig@2.1.0",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/pluggy@1.6.0",
+        "pkg:pypi/pygments@2.19.2",
+        "pkg:pypi/tomli@2.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytest-asyncio@1.1.0",
+      "dependsOn": [
+        "pkg:pypi/backports-asyncio-runner@1.2.0",
+        "pkg:pypi/pytest@8.4.1",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytest-cov@6.2.1",
+      "dependsOn": [
+        "pkg:pypi/coverage@7.5.0",
+        "pkg:pypi/pluggy@1.6.0",
+        "pkg:pypi/pytest@8.4.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/python-snappy@0.7.3",
+      "dependsOn": [
+        "pkg:pypi/cramjam@2.11.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/readthedocs-sphinx-search@0.3.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/requests@2.32.4",
+      "dependsOn": [
+        "pkg:pypi/certifi@2025.7.14",
+        "pkg:pypi/charset-normalizer@3.4.2",
+        "pkg:pypi/idna@3.10",
+        "pkg:pypi/urllib3@2.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/roman-numerals-py@3.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/s3transfer@0.13.1",
+      "dependsOn": [
+        "pkg:pypi/botocore@1.40.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/service-identity@24.2.0",
+      "dependsOn": [
+        "pkg:pypi/attrs@25.3.0",
+        "pkg:pypi/cryptography@46.0.1",
+        "pkg:pypi/pyasn1-modules@0.4.2",
+        "pkg:pypi/pyasn1@0.6.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/setuptools@80.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/simplejson@3.20.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sniffio@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/snowballstemmer@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/soupsieve@2.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinx@7.4.7",
+      "dependsOn": [
+        "pkg:pypi/alabaster@1.0.0",
+        "pkg:pypi/babel@2.17.0",
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/docutils@0.21.2",
+        "pkg:pypi/imagesize@1.4.1",
+        "pkg:pypi/importlib-metadata@8.7.0",
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/pygments@2.19.2",
+        "pkg:pypi/requests@2.32.4",
+        "pkg:pypi/snowballstemmer@3.0.1",
+        "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+        "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+        "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+        "pkg:pypi/tomli@2.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinx@8.1.3",
+      "dependsOn": [
+        "pkg:pypi/alabaster@1.0.0",
+        "pkg:pypi/babel@2.17.0",
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/docutils@0.21.2",
+        "pkg:pypi/imagesize@1.4.1",
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/pygments@2.19.2",
+        "pkg:pypi/requests@2.32.4",
+        "pkg:pypi/snowballstemmer@3.0.1",
+        "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+        "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+        "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+        "pkg:pypi/tomli@2.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinx@8.2.3",
+      "dependsOn": [
+        "pkg:pypi/alabaster@1.0.0",
+        "pkg:pypi/babel@2.17.0",
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/docutils@0.21.2",
+        "pkg:pypi/imagesize@1.4.1",
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/pygments@2.19.2",
+        "pkg:pypi/requests@2.32.4",
+        "pkg:pypi/roman-numerals-py@3.1.0",
+        "pkg:pypi/snowballstemmer@3.0.1",
+        "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+        "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+        "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+        "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinx-autobuild@2024.10.3",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/sphinx@8.2.3",
+        "pkg:pypi/starlette@0.47.2",
+        "pkg:pypi/uvicorn@0.35.0",
+        "pkg:pypi/watchfiles@1.1.0",
+        "pkg:pypi/websockets@15.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinx-basic-ng@1.0.0b2",
+      "dependsOn": [
+        "pkg:pypi/sphinx@8.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinx-rtd-theme@3.0.2",
+      "dependsOn": [
+        "pkg:pypi/docutils@0.21.2",
+        "pkg:pypi/sphinx@8.2.3",
+        "pkg:pypi/sphinxcontrib-jquery@4.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-jquery@4.1",
+      "dependsOn": [
+        "pkg:pypi/sphinx@8.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sphinxcontrib-shellcheck@1.1.2",
+      "dependsOn": [
+        "pkg:pypi/decorator@5.2.1",
+        "pkg:pypi/docutils@0.21.2",
+        "pkg:pypi/six@1.17.0",
+        "pkg:pypi/sphinx@8.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/starlette@0.47.2",
+      "dependsOn": [
+        "pkg:pypi/anyio@4.9.0",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/tomli@2.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.14.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/urllib3@1.26.20",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/uvicorn@0.35.0",
+      "dependsOn": [
+        "pkg:pypi/click@8.2.1",
+        "pkg:pypi/h11@0.16.0",
+        "pkg:pypi/typing-extensions@4.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/watchfiles@1.1.0",
+      "dependsOn": [
+        "pkg:pypi/anyio@4.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/websockets@15.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/winkerberos@0.12.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/zipp@3.23.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/zope-event@5.1.1",
+      "dependsOn": [
+        "pkg:pypi/setuptools@80.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zope-interface@7.2",
+      "dependsOn": [
+        "pkg:pypi/setuptools@80.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zstandard@0.23.0",
+      "dependsOn": [
+        "pkg:pypi/cffi@2.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zope.interface@7.2",
+      "dependsOn": [
+        "pkg:pypi/setuptools@80.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pymongo@4.16.0.dev0",
+      "dependsOn": [
+        "pkg:pypi/dnspython@2.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/mockupdb@latest",
+      "dependsOn": [
+        "pkg:pypi/pymongo@4.16.0.dev0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zope.event@5.1.1",
+      "dependsOn": [
+        "pkg:pypi/setuptools@80.9.0"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "bom-ref": "metadata-annotations",
+      "subjects": [
+        "pkg:pypi/pymongo@latest"
+      ],
+      "annotator": {
+        "component": {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "11.11.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@11.11.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.11.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      },
+      "timestamp": "2025-11-17T19:09:49Z",
+      "text": "This Software Bill-of-Materials (SBOM) document was created on Monday, November 17, 2025 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named 'pymongo'. There are 101 components."
+    }
+  ]
+}
