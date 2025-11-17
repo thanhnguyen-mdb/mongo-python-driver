@@ -8,7 +8,7 @@ name: Generate SBOM
 on:
   workflow_dispatch: {}
   push:
-    branches: ['main']
+    branches: ['main', 'sbom']
     paths:
       - 'pyproject.toml'
       - 'uv.lock'
