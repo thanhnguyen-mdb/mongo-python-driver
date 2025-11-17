@@ -54,6 +54,20 @@ tasks:
             - .evergreen/scripts/resync-all-specs.sh
           working_dir: src
 
+  - name: "verify-sbom-task"
+    allowed_requesters: ["patch", "github_pr"]
+    tags: ["sbom"]
+    commands:
+      - command: shell.exec
+        type: "test"
+        params:
+          working_dir: "src"
+          shell: "bash"
+          script: |
+            ${PREPARE_SHELL}
+            echo "Verifying SBOM files"
+            bash .evergreen/verify-sbom.sh
+
 buildvariants:
   - name: resync_specs
     display_name: "Resync Specs"
@@ -62,3 +76,15 @@ buildvariants:
     patchable: true
     tasks:
       - name: resync_specs
+
+  - name: "verify-sbom"
+    display_name: "Verify SBOM Changes Needed"
+    run_on: ubuntu2204-small
+    # Only trigger when dependency manifests or the SBOM itself change.
+    paths:
+      - "pyproject.toml"
+      - "requirements.txt"
+      - "**/requirements*.txt"
+      - "sbom.json"
+    tasks:
+      - name: "verify-sbom-task"
