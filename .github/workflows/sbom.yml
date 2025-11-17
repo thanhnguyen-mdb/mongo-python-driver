@@ -2,34 +2,33 @@ name: Generate SBOM
 
 # This workflow uses cdxgen and publishes
 # an sbom.json artifact enriched with supplier information.
-# It is configured to run on demand and on pushes to any branch
-# (including non-default branches) so you can see results while
-# iterating in feature branches.
+# It runs on manual trigger or when package files change on main branch,
+# and creates a PR with the updated SBOM.
 
 on:
   workflow_dispatch: {}
   push:
-    branches: ['**']
+    branches: ['main']
     paths:
       - 'pyproject.toml'
       - 'uv.lock'
       - 'requirements.txt'
-      - 'generate_sbom.sh'
-      - '.github/workflows/sbom.yml'
-      - 'tools/enrich_suppliers.py'
+      - 'requirements/**/*.txt'
 
 permissions:
-  contents: read
-  actions: read
+  contents: write
+  pull-requests: write
   id-token: write
 
 jobs:
   sbom:
-    name: Build SBOM
+    name: Generate SBOM and Create PR
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
@@ -71,6 +70,36 @@ jobs:
             source sbom-venv/bin/activate
             python tools/enrich_suppliers.py --input sbom.json
         shell: bash
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: Update SBOM after dependency changes'
+          branch: auto-update-sbom-${{ github.run_number }}
+          delete-branch: true
+          title: 'chore: Update SBOM'
+          body: |
+            ## Automated SBOM Update
+            
+            This PR was automatically generated because dependency manifest files changed.
+            
+            ### Changes
+            - Updated `sbom.json` to reflect current dependencies
+            
+            ### Verification
+            The SBOM was generated using cdxgen with the current Python environment.
+            
+            ### Triggered by
+            - Commit: ${{ github.sha }}
+            - Workflow run: ${{ github.run_id }}
+            
+            ---
+            _This PR was created automatically by the [SBOM workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})_
+          labels: |
+            sbom
+            automated
+            dependencies
 
       - name: Upload SBOM artifact
         uses: actions/upload-artifact@v4
