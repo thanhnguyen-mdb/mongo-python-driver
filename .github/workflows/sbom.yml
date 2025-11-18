@@ -104,9 +104,37 @@ jobs:
           path: sbom.json
           if-no-files-found: error
 
+      - name: Upload SBOM to DependencyTrack
+        if: github.ref == 'refs/heads/main'
+        run: |
+          response=$(curl -w "\n%{http_code}" -X "POST" "https://dtrack.devprod-platform.staging.corp.mongodb.com/api/v1/bom" \
+            -H "X-Api-Key: ${{ secrets.DTRACK_API_KEY }}" \
+            -F "project=9e5c5311-ace4-440b-bb26-42055b4e104b" \
+            -F "bom=@sbom.json")
+          
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+          
+          echo "Response: $body"
+          echo "HTTP Status: $http_code"
+          
+          if [ "$http_code" -ge 200 ] && [ "$http_code" -lt 300 ]; then
+            echo "Successfully uploaded SBOM to DependencyTrack"
+            echo "Upload token: $(echo "$body" | jq -r '.token // "N/A"')"
+          else
+            echo "Failed to upload SBOM (HTTP $http_code)"
+            echo "$body"
+            exit 1
+          fi
+        shell: bash
+
       - name: Display SBOM summary line
         run: |
           echo "SBOM size (bytes): $(wc -c < sbom.json)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "SBOM uploaded to DependencyTrack" >> $GITHUB_STEP_SUMMARY
+            echo "[View Project](https://dtrack.devprod-platform.staging.corp.mongodb.com/projects/9e5c5311-ace4-440b-bb26-42055b4e104b)" >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: Cleanup
         if: always()
