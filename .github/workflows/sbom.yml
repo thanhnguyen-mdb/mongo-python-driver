@@ -57,6 +57,10 @@ jobs:
       - name: Validate SBOM
         run: /tmp/cyclonedx validate --input-file sbom.json --fail-on-errors
 
+      - name: Cleanup
+        if: always()
+        run: rm -rf .venv .venv-sbom
+
       - name: Upload SBOM artifact
         uses: actions/upload-artifact@v4
         with:
@@ -93,7 +97,3 @@ jobs:
             sbom
             automated
             dependencies
-
-      - name: Cleanup
-        if: always()
-        run: rm -rf .venv .venv-sbom
