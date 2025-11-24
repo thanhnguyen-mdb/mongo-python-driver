@@ -48,6 +48,8 @@ jobs:
           source .venv-sbom/bin/activate
           pip install cyclonedx-bom==7.2.1
           cyclonedx-py environment --spec-version 1.5 --output-format JSON --output-file sbom.json .venv
+          # Add PURL for pymongo (local package doesn't get PURL automatically)
+          jq '(.components[] | select(.name == "pymongo" and .purl == null)) |= (. + {purl: ("pkg:pypi/pymongo@" + .version)})' sbom.json > sbom.tmp.json && mv sbom.tmp.json sbom.json
 
       - name: Download CycloneDX CLI
         run: |
